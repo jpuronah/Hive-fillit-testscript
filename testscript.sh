@@ -51,3 +51,8 @@ result between 		5 and 10 second: 	3 points
 result between 		10 and 20 second: 	2 points
 result between 		20 and 30 second: 	1 points
 result more than 	30 second:		0 points "
+echo "================================="
+echo " LEAKS: "
+echo "================================="
+leaks -atExit -- ./fillit ./eval_files/error1
+leaks -atExit -- ./fillit ./eval_files/hard
